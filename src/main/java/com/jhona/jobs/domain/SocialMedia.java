@@ -1,6 +1,6 @@
 package com.jhona.jobs.domain;
 
-import com.jhona.jobs.domain.constants.ConstantsTableNames;
+import constants.ConstantsTableNames;
 import lombok.Getter;
 import lombok.Setter;
 

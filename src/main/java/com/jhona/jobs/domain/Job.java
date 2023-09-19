@@ -1,7 +1,7 @@
 package com.jhona.jobs.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.jhona.jobs.domain.constants.ConstantsTableNames;
+import constants.ConstantsTableNames;
 import lombok.Getter;
 import lombok.Setter;
 

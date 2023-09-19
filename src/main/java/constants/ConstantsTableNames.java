@@ -1,4 +1,4 @@
-package com.jhona.jobs.domain.constants;
+package constants;
 
 public final class ConstantsTableNames {
     public interface CompanyTable {

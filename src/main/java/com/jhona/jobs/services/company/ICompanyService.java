@@ -1,8 +1,8 @@
 package com.jhona.jobs.services.company;
 
 import com.jhona.jobs.domain.Company;
+import org.springframework.data.domain.Page;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface ICompanyService {
@@ -10,5 +10,5 @@ public interface ICompanyService {
 
     Company save(Company company);
 
-    List<Company> getAllCountries();
+    Page<Company> getAllCompanies();
 }

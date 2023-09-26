@@ -2,15 +2,14 @@ package com.jhona.jobs.services.company;
 
 import com.jhona.jobs.domain.Company;
 import com.jhona.jobs.repository.CompanyRepository;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.data.domain.Pageable;
-import java.util.List;
+
 import java.util.Optional;
 
 @Service
 public class CountryServiceImpl implements ICompanyService {
-    Pageable secondPageWithFiveElements = PageRequest.of(0, 5);
     private final CompanyRepository companyRepository;
 
     public CountryServiceImpl(CompanyRepository companyRepository) {
@@ -28,7 +27,7 @@ public class CountryServiceImpl implements ICompanyService {
     }
 
     @Override
-    public List<Company> getAllCountries() {
-        return companyRepository.findAllByName("name", secondPageWithFiveElements);
+    public Page<Company> getAllCompanies() {
+        return companyRepository.findAll(PageRequest.of(1, 5));
     }
 }
